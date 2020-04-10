@@ -3,7 +3,7 @@ class Dog
 attr_accessor :name, :breed
 attr_reader :id
 
-  def initialize(id=nil, name:, breed:)
+  def initialize(id: nil, name:, breed:)
       @id = id
       @name = name
       @breed = breed
@@ -87,5 +87,5 @@ attr_reader :id
         sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
         DB[:conn].execute(sql, self.name, self.breed, self.id)
       end
-      
+
 end
