@@ -25,5 +25,5 @@ attr_reader :id
         DB[:conn].execute(sql)
     end
 
-      
+
 end
